@@ -31,11 +31,11 @@ function move(player) {
 	}
 	document.getElementById("player").children[player].style.outline = "2px solid "+p_color;
 	document.getElementById("ai").children[ai].style.outline = "2px solid "+a_color;
-	document.getElementById("result").innerText = results[result];
 	stats[result]++;
 	for(let c in stats) {
 		document.getElementById("stats").children[c].innerText = stats[c];
 	}
+	console.log(result);
 }
 
 
